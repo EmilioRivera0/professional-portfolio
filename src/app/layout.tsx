@@ -3,6 +3,8 @@ import "./globals.css";
 
 import { Header } from "@/components/Header/header";
 
+{/* icon.svg source https://icones.js.org/collection/fa */}
+
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "My Professional Portfolio",

@@ -22,18 +22,18 @@ const pages : PagePath[] = [
 
 export function Header() {
     return (
-        <section className="border-2">
+        <section>
             {/* Desktop Devices */}
-            <section className="flex flex-row max-md:hidden px-6 py-2 justify-between">
+            <section className="flex flex-row max-md:hidden px-6 py-2 justify-between text-lg">
                 <div className="w-1/4 my-auto">
                     <h2>Emilio Rivera Macías</h2>
                     <h3>Computer Systems Engineer</h3>
                 </div>
-                <div className="flex flex-row w-2/4 my-auto justify-center gap-16 lg:gap-40">
+                <div className="flex flex-row w-2/4 my-auto justify-center gap-12 lg:gap-36">
                     {pages.map((it, index) => (<Link href={it.path} key={index}>{it.title}</Link>))}
                 </div>
-                <div className="flex w-1/4 my-auto justify-center">
-                    <Link href='/cv'>CV</Link>
+                <div className="flex w-1/4 my-auto justify-end">
+                    <Link className="mr-8 lg:mr-12" href='/cv'>CV</Link>
                 </div>
             </section>
             {/* Mobile Devices */}
