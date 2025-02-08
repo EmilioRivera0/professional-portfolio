@@ -1,10 +1,13 @@
 'use client'
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const images: string[] = [
-];
+import Formal from "@public/Formal.jpg";
+import Malinche from "@public/Malinche.jpg";
+import Piramide from "@public/Piramide.jpg";
+
+const images: StaticImageData[] = [Malinche, Formal, Piramide];
 
 const responsive = {
   desktop: {
@@ -35,18 +38,13 @@ export function Pictures() {
       autoPlay={true}
       autoPlaySpeed={5000}
       keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
+      transitionDuration={250}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
       {images.map((it, index) => <Image src={it} alt="Me" key={index}/>)}
-      <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div>
     </Carousel>
   );
 }
