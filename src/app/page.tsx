@@ -16,11 +16,13 @@ export default function Home() {
             className="lg:hidden rounded-2xl"
             src={Malinche}
             alt="Me"
+            priority
           />
           <Image
             className="max-lg:hidden rounded-2xl"
             src={Malinche_LG}
             alt="Me"
+            priority
           />
 
         </div>
