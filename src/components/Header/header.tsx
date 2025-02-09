@@ -24,7 +24,7 @@ export function Header() {
     return (
         <section>
             {/* Desktop Devices */}
-            <section className="flex flex-row max-md:hidden px-6 py-2 justify-between text-lg">
+            <section className="flex flex-row max-md:hidden px-6 py-2 justify-between text-lg lg:text-xl">
                 <div className="w-1/4 my-auto">
                     <h2>Emilio Rivera Macías</h2>
                     <h3>Computer Systems Engineer</h3>

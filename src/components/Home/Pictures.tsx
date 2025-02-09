@@ -30,6 +30,7 @@ const responsive = {
 export function Pictures() {
   return(
     <Carousel
+      className="rounded-2xl"
       swipeable={true}
       draggable={true}
       showDots={true}
@@ -44,7 +45,13 @@ export function Pictures() {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      {images.map((it, index) => <Image src={it} alt="Me" key={index}/>)}
+      {images.map((it, index) =>
+        <Image
+          src={it}
+          alt="Me"
+          key={index}
+        />)
+      }
     </Carousel>
   );
 }
