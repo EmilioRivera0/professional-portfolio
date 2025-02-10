@@ -109,12 +109,6 @@ export const projects: Project[] = [
     },
     //C#
     {
-        title: "Production and Warehouse Monitoring System",
-        description: "Collaborating on the designing and development of a desktop application for administering the inventory at FISAIR Puebla.",
-        technologies: ["C#", ".NET", "MAUI", "XAML",],
-        link: "",
-    },
-    {
         title: "Appointment Management System",
         description: "Designing and developing an appointment management system for a nutrition clinic using .NET MAUI.",
         technologies: ["C#", ".NET", "MAUI", "XAML",],
