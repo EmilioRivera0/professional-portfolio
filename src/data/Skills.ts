@@ -118,6 +118,10 @@ export const skills: Skill[] = [
                 name: 'Arch',
             },
             {
+                icon: 'devicon:vim',
+                name: 'Vim',
+            },
+            {
                 icon: 'mdi:code-greater-than-or-equal',
                 name: 'CLI',
             },
@@ -182,6 +186,10 @@ export const skills: Skill[] = [
             {
                 icon: 'devicon:figma',
                 name: 'Figma',
+            },
+            {
+                icon: 'devicon:vscode',
+                name: 'VS Code',
             },
             {
                 icon: 'devicon:java',

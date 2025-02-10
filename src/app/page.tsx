@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { AboutMe } from "@/components/Home/AboutMe";
 import { Skills } from "@/components/Home/Skills";
+import { Strengths } from "@/components/Home/Strengths";
 
 import Malinche from "@public/Malinche.jpg";
 import Malinche_LG from "@public/Malinche-LG.jpg";
@@ -34,6 +35,11 @@ export default function Home() {
       {/* Skills */}
       <div className="flex justify-center">
         <Skills />
+      </div>
+
+      {/* Strengths */}
+      <div className="flex justify-center">
+        <Strengths />
       </div>
     </section> 
   );

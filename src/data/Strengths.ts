@@ -6,7 +6,7 @@ type Strength = {
     name: string;
 };
 
-export const skills: Strength[] = [
+export const strengths: Strength[] = [
     {
         icon: 'mdi:account-group-outline',
         name: 'Leadership',
@@ -20,10 +20,6 @@ export const skills: Strength[] = [
         name: 'Social',
     },
     {
-        icon: 'mdi:comment-check-outline',
-        name: 'Great Communicator',
-    },
-    {
         icon: 'mdi:notebook-check-outline',
         name: 'Responsible',
     },
@@ -34,6 +30,10 @@ export const skills: Strength[] = [
     {
         icon: 'mdi:account-search-outline',
         name: 'Inquirer',
+    },
+    {
+        icon: 'mdi:comment-check-outline',
+        name: 'Great Communicator',
     },
     {
         icon: 'mdi:heart-flash',
