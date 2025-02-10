@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mb-20 space-y-8 md:space-y-10">
+      <body className="mb-44 space-y-8 md:space-y-10">
         <Header />
         <main>{children}</main>
       </body>

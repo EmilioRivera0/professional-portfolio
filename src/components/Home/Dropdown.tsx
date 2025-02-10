@@ -17,9 +17,10 @@ type Skill = {
 
 type Props = {
     skill: Skill;
+    className: string;
 };
 
-export function Dropdown({skill}: Props) {
+export function Dropdown({skill, className}: Props) {
     const [show, setShow] = useState<boolean>(false);
     // refs to dropdown elements
     const dropdownRef = useRef<HTMLDivElement>(null);
@@ -44,10 +45,10 @@ export function Dropdown({skill}: Props) {
     }, [show]);
 
     return (
-        <div className="relative" ref={dropdownRef}>
+        <div className={`relative ${className}`} ref={dropdownRef}>
             {/* Button */}
             <button 
-                className={`flex flex-row w-full py-2 px-4 items-center ${show? 'rounded-t-xl':'rounded-xl'} border-2 bg-gray-200`}
+                className={`flex flex-row w-full py-2 px-4 items-center justify-between ${show? 'rounded-t-xl':'rounded-xl'} border-2 bg-gray-200`}
                 onClick={click}
             >
                 <Icon icon={skill.icon} width={40} />
@@ -55,13 +56,12 @@ export function Dropdown({skill}: Props) {
                 <Icon icon="mdi:arrow-down-drop-circle-outline" width={25} />
             </button>
             {/* Hidden Dropdown */}
-            <div className={`${show? 'grid':'hidden'} absolute z-10 grid-cols-2 w-full p-4 gap-1 rounded-b-xl bg-gray-200`}>
+            <div className={`${show? 'flex flex-wrap':'hidden'} absolute z-10 w-full p-4 justify-center gap-4 rounded-b-xl bg-gray-200`}>
                 {
                     skill.content.map((it, index) => (
                         <div className="flex flex-row items-center" key={index}>
                             {it.icon? (<Icon icon={it.icon} width={35} />) : (<Image width={35} src={it.img? it.img : ''} alt="Logo" />)}
-                            
-                            <h3 className="ml-2 text-lg md:text-xl lg:text-2xl">{it.name}</h3>
+                            <h3 className="ml-1 text-lg md:text-xl lg:text-2xl">{it.name}</h3>
                         </div>
                     ))
                 }

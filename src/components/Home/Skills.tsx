@@ -5,11 +5,11 @@ import { skills } from "@/data/Skills";
 
 export function Skills() {
     return(
-        <section>
+        <section className="w-11/12 space-y-4">
             <h2 className="text-center text-xl md:text-2xl lg:text-4xl font-bold">Skills</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
                 {skills.map((it, index) => (
-                    <Dropdown skill={it} key={index} />
+                    <Dropdown skill={it} key={index} className="w-10/12 md:w-5/12 lg:w-3/12" />
                 ))}
             </div>
         </section>

@@ -92,16 +92,16 @@ export const skills: Skill[] = [
         icon: 'mdi:database-outline',
         content: [
             {
-                img: Postgresql,
-                name: 'PostgreSQL',
-            },
-            {
                 icon: 'devicon:mysql',
                 name: 'MySQL',
             },
             {
                 icon: 'devicon:sqlite',
                 name: 'SQLite',
+            },
+            {
+                img: Postgresql,
+                name: 'PostgreSQL',
             },
         ],
     },
@@ -141,7 +141,7 @@ export const skills: Skill[] = [
             },
             {
                 icon: 'mdi:file-code-outline',
-                name: 'POSIX Standard',
+                name: 'POSIX Library',
             },
             {
                 icon: 'mdi:file-code-outline',
