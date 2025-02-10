@@ -1,5 +1,6 @@
 "use client"
 
+import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
 import { useEffect, useState, useRef } from "react";
 
@@ -8,7 +9,8 @@ type Skill = {
     icon: string;
     content: 
         {
-            icon: string;
+            icon?: string;
+            img?: StaticImageData;
             name: string;
         }[]
 };
@@ -19,8 +21,8 @@ type Props = {
 
 export function Dropdown({skill}: Props) {
     const [show, setShow] = useState<boolean>(false);
-    const buttonRef = useRef(null);
-    const dropdownRef = useRef(null);
+    // refs to dropdown elements
+    const dropdownRef = useRef<HTMLDivElement>(null);
 
     function click(e: any){
         // show/hide dropdown
@@ -28,37 +30,37 @@ export function Dropdown({skill}: Props) {
     }
 
     useEffect(() => {
-        function outsideClick(){
-            //------------------------------------------------------------------------
+        // add or remove event listener
+        function outsideClick(e: any){
+            if (dropdownRef.current)
+                if (!dropdownRef.current.contains(e.target))
+                    setShow(!show);
         };
-
         if (show)
             window.addEventListener("mouseup", outsideClick);
         else
             window.removeEventListener("mouseup", outsideClick);
+
     }, [show]);
 
     return (
-        <div className="relative">
+        <div className="relative" ref={dropdownRef}>
             {/* Button */}
             <button 
                 className={`flex flex-row w-full py-2 px-4 items-center ${show? 'rounded-t-xl':'rounded-xl'} border-2 bg-gray-200`}
                 onClick={click}
-                ref={buttonRef}
             >
                 <Icon icon={skill.icon} width={40} />
                 <h3 className="ml-2 mr-4 text-lg md:text-xl lg:text-3xl font-bold">{skill.title}</h3>
                 <Icon icon="mdi:arrow-down-drop-circle-outline" width={25} />
             </button>
             {/* Hidden Dropdown */}
-            <div
-                className={`${show? 'grid':'hidden'} absolute z-10 grid-cols-2 w-full p-2 rounded-b-xl bg-gray-200`}
-                ref={dropdownRef}
-            >
+            <div className={`${show? 'grid':'hidden'} absolute z-10 grid-cols-2 w-full p-4 gap-1 rounded-b-xl bg-gray-200`}>
                 {
                     skill.content.map((it, index) => (
                         <div className="flex flex-row items-center" key={index}>
-                            <Icon icon={it.icon} width={30} />
+                            {it.icon? (<Icon icon={it.icon} width={35} />) : (<Image width={35} src={it.img? it.img : ''} alt="Logo" />)}
+                            
                             <h3 className="ml-2 text-lg md:text-xl lg:text-2xl">{it.name}</h3>
                         </div>
                     ))

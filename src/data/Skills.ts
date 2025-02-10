@@ -1,121 +1,195 @@
+import { StaticImageData } from "next/image";
+
+import Django from "@public/Django.svg";
+import Sqlalchemy from "@public/Sqlalchemy.svg";
+import Postgresql from "@public/Postgresql.svg";
+import Dotnet from "@public/Dotnet.svg";
+
 type Skill = {
     title: string;
     icon: string;
     content: 
         {
-            icon: string;
+            icon?: string;
+            img?: StaticImageData;
             name: string;
         }[]
 };
 
 export const skills: Skill[] = [
     {
-        title: 'Front End',
-        icon: 'devicon:aarch64',
+        title: 'Languages',
+        icon: 'mdi:earth',
         content: [
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'mdi:account-tie-voice',
+                name: 'English'
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
-            },
-            {
-                icon: 'devicon:aarch64',
-                name: 'temp',
-            },
-            {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'mdi:account-tie-voice',
+                name: 'Spanish'
             },
         ],
     },
     {
         title: 'Front End',
-        icon: 'devicon:aarch64',
+        icon: 'mdi:web-check',
         content: [
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:react',
+                name: 'React',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:nextjs',
+                name: 'Next.js',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:astro',
+                name: 'Astro',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:vuejs',
+                name: 'Vue',
+            },
+            {
+                icon: 'devicon:tailwindcss',
+                name: 'Tailwind',
+            },
+            {
+                icon: 'devicon:javascript',
+                name: 'Javascript',
+            },
+            {
+                icon: 'devicon:typescript',
+                name: 'Typescript',
             },
         ],
     },
     {
-        title: 'Front End',
-        icon: 'devicon:aarch64',
+        title: 'Back End',
+        icon: 'mdi:server-outline',
         content: [
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:python',
+                name: 'Python',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:flask',
+                name: 'Flask',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                img: Django,
+                name: 'Django',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                img: Sqlalchemy,
+                name: 'SQLAlchemy',
             },
         ],
     },
     {
-        title: 'Front End',
-        icon: 'devicon:aarch64',
+        title: 'Databases',
+        icon: 'mdi:database-outline',
         content: [
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                img: Postgresql,
+                name: 'PostgreSQL',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:mysql',
+                name: 'MySQL',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
-            },
-            {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:sqlite',
+                name: 'SQLite',
             },
         ],
     },
     {
-        title: 'Front End',
-        icon: 'devicon:aarch64',
+        title: 'Linux',
+        icon: 'devicon:linux',
         content: [
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:bash',
+                name: 'Bash',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'devicon:archlinux',
+                name: 'Arch',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'mdi:code-greater-than-or-equal',
+                name: 'CLI',
+            },
+        ],
+    },
+    {
+        title: 'C/C++',
+        icon: 'devicon:cplusplus',
+        content: [
+            {
+                icon: 'devicon:c',
+                name: 'C',
             },
             {
-                icon: 'devicon:aarch64',
-                name: 'temp',
+                icon: 'mdi:file-code-outline',
+                name: 'Linux API',
+            },
+            {
+                icon: 'mdi:file-code-outline',
+                name: 'GNU C Library',
+            },
+            {
+                icon: 'mdi:file-code-outline',
+                name: 'POSIX Standard',
+            },
+            {
+                icon: 'mdi:file-code-outline',
+                name: 'STL',
+            },
+        ],
+    },
+    {
+        title: 'C#',
+        icon: 'devicon:csharp',
+        content: [
+            {
+                img: Dotnet,
+                name: 'NET',
+            },
+            {
+                img: Dotnet,
+                name: 'NET MAUI',
+            },
+        ],
+    },
+    {
+        title: 'Technologies',
+        icon: 'mdi:tools',
+        content: [
+            {
+                icon: 'devicon:docker',
+                name: 'Docker',
+            },
+            {
+                icon: 'devicon:postman',
+                name: 'Postman',
+            },
+            {
+                icon: 'devicon:git',
+                name: 'Git',
+            },
+            {
+                icon: 'devicon:figma',
+                name: 'Figma',
+            },
+            {
+                icon: 'devicon:java',
+                name: 'Java',
+            },
+            {
+                icon: 'devicon:amazonwebservices-wordmark',
+                name: 'AWS',
             },
         ],
     },
