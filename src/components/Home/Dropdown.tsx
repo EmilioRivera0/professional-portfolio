@@ -4,16 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
 import { useEffect, useState, useRef } from "react";
 
-type Skill = {
-    title: string;
-    icon: string;
-    content: 
-        {
-            icon?: string;
-            img?: StaticImageData;
-            name: string;
-        }[]
-};
+import { Skill } from "@/data/Skills";
 
 type Props = {
     skill: Skill;

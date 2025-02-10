@@ -5,7 +5,7 @@ import Sqlalchemy from "@public/Sqlalchemy.svg";
 import Postgresql from "@public/Postgresql.svg";
 import Dotnet from "@public/Dotnet.svg";
 
-type Skill = {
+export type Skill = {
     title: string;
     icon: string;
     content: 
