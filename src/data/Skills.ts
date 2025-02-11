@@ -192,6 +192,10 @@ export const skills: Skill[] = [
                 name: 'VS Code',
             },
             {
+                icon: 'devicon:neovim',
+                name: 'NVim',
+            },
+            {
                 icon: 'devicon:java',
                 name: 'Java',
             },

@@ -1,9 +1,6 @@
 import Link from "next/link";
 
-type PagePath = {
-    title: string;
-    path: string;
-};
+import { PagePath, HeaderDropdown } from "./HeaderDropdown";
 
 const pages : PagePath[] = [
     {
@@ -33,11 +30,17 @@ export function Header() {
                     {pages.map((it, index) => (<Link href={it.path} key={index}>{it.title}</Link>))}
                 </div>
                 <div className="flex w-1/4 my-auto justify-end">
-                    <Link className="mr-8 lg:mr-12" href='/cv'>CV</Link>
+                    <Link className="mr-8 lg:mr-12" href='/CV.pdf'>CV</Link>
                 </div>
             </section>
             {/* Mobile Devices */}
-            <section className="flex-row md:hidden">Small</section>
+            <section className="md:hidden flex flex-row px-6 py-2 justify-between">
+                <div className="w-7/12 my-auto">
+                    <h2>Emilio Rivera Macías</h2>
+                    <h3>Computer Systems Engineer</h3>
+                </div>
+                <HeaderDropdown content={pages} className="w-5/12" />
+            </section>
         </section>
     );
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Icon } from "@iconify/react";
 import { useEffect, useState, useRef } from "react";
 
@@ -47,7 +47,7 @@ export function Dropdown({skill, className}: Props) {
                 <Icon icon="mdi:arrow-down-drop-circle-outline" width={25} />
             </button>
             {/* Hidden Dropdown */}
-            <div className={`${show? 'flex flex-wrap':'hidden'} absolute z-10 w-full p-4 justify-center gap-4 rounded-b-xl bg-gray-200`}>
+            <div className={`${show? 'flex flex-wrap':'hidden'} absolute z-10 w-full p-4 justify-center gap-4 border-t-2 border-black rounded-b-xl bg-gray-200`}>
                 {
                     skill.content.map((it, index) => (
                         <div className="flex flex-row items-center" key={index}>
