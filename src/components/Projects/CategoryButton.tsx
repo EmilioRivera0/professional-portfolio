@@ -4,11 +4,19 @@ type Props = {
     content: string;
     category: string;
     setter: Dispatch<SetStateAction<string>>;
+    className?: string;
 };
 
-export function CategoryButton({content, category, setter}: Props) {
-    console.log(content === category)
+export function CategoryButton({content, category, setter, className}: Props) {
+    function click() {
+        setter(content);
+    };
     return (
-        <button className={`${category === content? 'bg-green-400' : 'bg-gray-200'} w-full text-lg font-bold rounded-xl border-2`}>{content}</button>
+        <button
+            className={`${(category === content)? 'bg-green-400' : 'bg-gray-200'} ${className} text-lg font-bold rounded-xl border-2`}
+            onClick={click}
+        >
+            {content}
+        </button>
     );
 };

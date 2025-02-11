@@ -18,6 +18,11 @@ export function ProjectCard({content, className}: Props) {
                     <div className="p-1 text-sm md:text-base lg:text-lg rounded-xl border-2" key={index}>{it}</div>
                 ))}
             </div>
+            {/* Project Type */}
+            <div className="flex flex-row mt-4 items-center gap-2">
+                <h3 className="font-semibold">Type:</h3>
+                <h3 className="p-1 font-semibold rounded-xl border-2">{content.type}</h3>
+            </div>
             {content.link && (
                 <Link 
                     className="flex flex-row w-fit p-1 mt-4 items-center gap-2 rounded-xl border-2"
