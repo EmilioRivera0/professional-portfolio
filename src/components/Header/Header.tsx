@@ -24,7 +24,7 @@ const pages : PagePath[] = [
 export function Header() {
     const path = usePathname();
     return (
-        <section className="fixed top-0 z-20 w-full font-semibold backdrop-blur-sm bg-gray-200/50">
+        <section className="fixed top-0 z-20 w-full font-semibold rounded-2xl backdrop-blur-sm bg-gray-200/50">
             {/* Desktop Devices */}
             <section className="flex flex-row max-md:hidden px-6 py-2 justify-between text-lg lg:text-xl">
                 <div className="w-5/12 lg:w-4/12 my-auto">
