@@ -13,7 +13,7 @@ export function CategoryButton({content, category, setter, className}: Props) {
     };
     return (
         <button
-            className={`${(category === content)? 'bg-green-400' : 'bg-gray-200'} ${className} text-lg font-bold rounded-xl border-2`}
+            className={`${(category === content)? 'bg-[#5c93d9] text-white' : 'bg-gray-200'} ${className} text-lg font-bold rounded-xl`}
             onClick={click}
         >
             {content}

@@ -56,7 +56,7 @@ export function HeaderDropdown({content, className, path}: Props) {
             <div className={`${show? 'flex flex-col':'hidden'} absolute -bottom-[200px] z-10 w-full p-4 justify-center gap-4 text-lg rounded-xl backdrop-blur-sm bg-gray-200/50`}>
                 {content.map((it, index) => (
                     <Link
-                        className={`${path === it.path? 'text-blue-500' : ''} border-b-2 border-black`}
+                        className={`${path === it.path? 'text-blue-700' : ''} border-b-2 border-black`}
                         href={it.path}
                         key={index}
                     >{
