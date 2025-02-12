@@ -3,7 +3,7 @@ import { skills } from "@/data/Skills";
 
 export function Skills() {
     return(
-        <section className="w-11/12 mx-auto space-y-4">
+        <section className="w-11/12 mx-auto space-y-4 reveal">
             <h2 className="text-center text-xl md:text-2xl lg:text-4xl font-bold">Skills</h2>
             <div className="flex flex-wrap justify-center gap-3">
                 {skills.map((it, index) => (
