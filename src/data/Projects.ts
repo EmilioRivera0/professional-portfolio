@@ -70,11 +70,25 @@ export const projects: Project[] = [
     //JavaScript
     {
         title: "Portfolio",
-        description: "Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities. This is my first ever project using Vue.",
-        technologies: ["JavaScript", "Vue", "Tailwind"],
+        description: "Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities. This is my first project using Next.js.",
+        technologies: ["JavaScript", "TypeScript", "Next.js", "Tailwind", "Bash"],
         category: ['JavaScript',],
         type: "Front End",
-        link: "https://github.com/EmilioRivera0/Portfolio",
+        link: "https://github.com/EmilioRivera0/professional-portfolio",
+    },
+    {
+        title: "Web Pages",
+        description: "",
+        technologies: ["JavaScript", "TypeScript", "Astro", "Tailwind"],
+        category: ['JavaScript',],
+        type: "Front End",
+    },
+    {
+        title: "Web Application",
+        description: "",
+        technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Bash", "JavaScript", "TypeScript", "React", "Tailwind"],
+        category: ['JavaScript', 'Python',],
+        type: "Front End",
     },
     {
         title: "Mobile App",
