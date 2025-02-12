@@ -32,7 +32,7 @@ export const projects: Project[] = [
         description: "Software developed in C that receives a logical expression and generates its respective truth table.",
         technologies: ["C", "C Standard Library"],
         category: ['C/C++',],
-        type: "Multiplatform Executable",
+        type: "Executable",
         link: "https://github.com/EmilioRivera0/TruthTableGenerator",
     },
     {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         description: "C++ programs able to generate a Convex Hull given the specified amount of random dots to generate. The Graham Scan Algorithm is used to find the smallest perimeter and area possible given the set of points.",
         technologies: ["C++", "Bash", "C++ Standard Template Library", "Python", "Graphics.py"],
         category: ['C/C++',],
-        type: "Multiplatform Executable",
+        type: "Executable",
         link: "https://github.com/EmilioRivera0/Convex_Hull",
     },
     {
@@ -64,7 +64,7 @@ export const projects: Project[] = [
         description: "Platypus programming language lexical analyzer developed using vanilla C++.",
         technologies: ["C++", "Bash", "C++ Standard Template Library"],
         category: ['C/C++',],
-        type: "Multiplatform Executable",
+        type: "Executable",
         link: "https://github.com/EmilioRivera0/Platypus",
     },
     //JavaScript
@@ -112,7 +112,7 @@ export const projects: Project[] = [
         description: "Python program capable of detecting the vertical and horizontal edges of an image by applying the Sobel filters.",
         technologies: ["Python", "OpenCV", "Matplotlib", "Numpy"],
         category: ['Python',],
-        type: "Multiplatform Script",
+        type: "Script",
         link: "https://github.com/EmilioRivera0/Sobel_Filter",
     },
     {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
         description: "Python developed software that automates and manages the hours covered by students in their social service.",
         technologies: ["Python", "SQL", "MySQL"],
         category: ['Python',],
-        type: "Multiplatform Script",
+        type: "Script",
         link: "https://github.com/EmilioRivera0/hour_tracker",
     },
     //C#

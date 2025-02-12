@@ -23,7 +23,7 @@ export function Projects() {
     return (
         <div className="flex flex-col md:flex-row gap-3 md:gap-2">
             {/* Desktop Categories */}
-            <div className="max-md:hidden flex flex-col md:w-2/12 lg:w-1/12 gap-2">
+            <div className="max-md:hidden flex flex-col h-fit md:w-2/12 lg:w-2/12 p-2 gap-4 rounded-2xl bg-gray-200/50">
                 <h2 className="text-center text-xl lg:text-2xl font-semibold">Filters:</h2>
                 {categories.map((it, index) => (
                     <CategoryButton
@@ -47,9 +47,12 @@ export function Projects() {
                 </select>
             </div>
             {/* Projects */}
-            <div className="flex flex-wrap items-start md:w-10/12 lg:w-11/12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start md:w-10/12 lg:w-10/12 gap-6 md:gap-2">
                 {projectList.map((it, index) => (
-                    <ProjectCard content={it} className="w-full md:w-1/2 lg:w-4/12" key={index} />
+                    <ProjectCard
+                        content={it}
+                        key={index}
+                    />
                 ))}
             </div>
         </div>
