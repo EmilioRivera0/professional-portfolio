@@ -16,8 +16,8 @@ cd $DIST_DIR
 
 # set Internal Field Separator to end of line '\n' to process files/directories with spaces
 IFS=$'\n'
-# get all the previous files and directories from DIST_DIR except .git/ directory
-result=$(find . -mindepth 1 -maxdepth 1 -path "./.git" -prune -o -print)
+# get all the previous files and directories from DIST_DIR except .git/ directory and .nojekyll file
+result=$(find . -mindepth 1 -maxdepth 1 -type d -name ".git" -prune -o -type f -name ".nojekyll" -prune -o -print)
 
 # remove all the previous directories and files
 if [[ -n $result ]]
