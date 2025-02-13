@@ -13,14 +13,14 @@ type Props = {
 
 export function Dropdown({skill, className}: Props) {
     const [show, setShow] = useState<boolean>(false);
-    // refs to dropdown elements
+    // ref to dropdown elements
     const dropdownRef = useRef<HTMLDivElement>(null);
 
+    // show/hide dropdown functionality
     function click(e: any){
         // show/hide dropdown
         setShow(!show);
     }
-
     useEffect(() => {
         // add or remove event listener
         function outsideClick(e: any){
@@ -36,7 +36,7 @@ export function Dropdown({skill, className}: Props) {
     }, [show]);
 
     return (
-        <div className={`relative ${className} `} ref={dropdownRef}>
+        <div className={`relative ${className}`} ref={dropdownRef}>
             {/* Button */}
             <button 
                 className={`flex flex-row w-full py-2 px-4 items-center justify-between ${show? 'rounded-t-xl':'rounded-xl'} bg-gray-200`}
@@ -52,7 +52,7 @@ export function Dropdown({skill, className}: Props) {
                     skill.content.map((it, index) => (
                         <div className="flex flex-row items-center" key={index}>
                             {it.icon? (<Icon icon={it.icon} width={35} />) : (<Image width={35} src={it.img? it.img : ''} alt="Logo" />)}
-                            <h3 className="ml-1 text-lg md:text-xl lg:text-2xl">{it.name}</h3>
+                            <h3 className="ml-1 text-lg md:text-xl lg:text-2xl font-semibold">{it.name}</h3>
                         </div>
                     ))
                 }

@@ -73,19 +73,24 @@
 }
 /* ------------------------- */
 
-/* Sliding Animation */
-.reveal {
-    animation: reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 15% cover 25%;
+/* Sliding Animations */
+.hide {
     opacity: 0;
-    translate: 100px;
 }
 
-@keyframes reveal {
-    to {
-        opacity: 1;
-        translate: 0;
-    }
+.visible {
+  animation: growIn 0.5s ease-out forwards;
 }
-/* ----------------- */
+
+@keyframes growIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ------------------ */

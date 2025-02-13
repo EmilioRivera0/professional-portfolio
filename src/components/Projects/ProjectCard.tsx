@@ -1,15 +1,37 @@
-import { Project } from "@/data/Projects";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+
+import { Project } from "@/data/Projects";
 
 type Props ={
     content: Project;
 };
 
 export function ProjectCard({content}: Props) {
+    // hooks for Intersection Observer
+    const cardRef = useRef<HTMLDivElement>(null);
+    const [intersect, setIntersect] = useState<boolean>(false);
+
+    useEffect(() => {
+        // create and add Interection Observer
+        const observer = new IntersectionObserver(([entry]) => {
+            setIntersect(entry.isIntersecting);
+        }, { threshold: 0.05 });
+        if (cardRef.current)
+            observer.observe(cardRef.current);
+        // remove Intersection Observer
+        return () => {
+            observer.disconnect();
+        }
+    }, []);
+
     return (
-        <div className="p-4 text-base md:text-lg lg:text-xl space-y-2 rounded-2xl shadow-2xl bg-gray-200 transition hover:scale-105 md:hover:scale-110">
+        <div
+            className={`${intersect? 'visible' : 'hide'} p-4 text-base md:text-lg lg:text-xl space-y-2 rounded-2xl shadow-2xl bg-gray-200`}
+            ref={cardRef}
+        >
             <h3 className="text-lg md:text-xl lg:text-2xl font-bold">{content.title}</h3>
             <p>{content.description}</p>
             {/* Used Technologies */}

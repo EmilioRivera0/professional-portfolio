@@ -13,14 +13,12 @@ export function AboutMe() {
                     className="lg:hidden rounded-2xl"
                     src={Malinche}
                     alt="Me"
-                    priority
                     unoptimized
                 />
                 <Image
                     className="max-lg:hidden rounded-2xl"
                     src={Malinche_LG}
                     alt="Me"
-                    priority
                     unoptimized
                 />
             </div>
