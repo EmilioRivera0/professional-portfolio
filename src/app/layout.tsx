@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mb-60">
+      <body className="mb-44 md:mb-60">
         {/* Background */}
         <div className="fixed -z-50 top-0 h-screen w-screen main-bg"></div>
         {/* Content */}

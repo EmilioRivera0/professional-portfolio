@@ -47,13 +47,13 @@ export function Header() {
             </section>
             {/* Mobile Devices */}
             <section className="md:hidden flex flex-row px-6 py-2 justify-between">
-                <div className="w-7/12 my-auto">
+                <div className="w-8/12 my-auto">
                     <h2>Emilio Rivera Macías</h2>
                     <h3>Computer Systems Engineer</h3>
                 </div>
                 <HeaderDropdown
                     content={pages}
-                    className="w-5/12"
+                    className="w-4/12"
                     path={path}
                 />
             </section>
