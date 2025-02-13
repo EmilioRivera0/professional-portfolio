@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useEffect } from "react";
 
 import { PagePath, HeaderDropdown } from "./HeaderDropdown";
 
