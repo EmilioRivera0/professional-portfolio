@@ -10,12 +10,21 @@ REMOTE='origin'
 
 # create dist directory if it is not present
 if [[ -d $DIST_DIR ]]; then
-  echo "dist/ directory found"
+  echo -e "\ndist/ directory found"
 else
-  echo "dist/ directory not found"
-  echo "Creating dist/ directory"
-  mkdir $DIST_DIR
+  echo -e "\ndist/ directory not found"
+  echo -e "Create dist/ directory and initialize the target Git Repo to deploy to!\n"
+  exit 1
 fi
+
+# cd into DIST_DIR
+cd $DIST_DIR
+
+# update local git repo
+git pull
+
+# go back to root directory
+cd ..
 
 # build static export files
 npm run build
