@@ -8,9 +8,9 @@ import Malinche_LG from "@public/Malinche-LG.webp";
 export function AboutMe() {
     return (
         <section className="flex flex-col md:flex-row md:h-[500px] lg:h-[600px] gap-2 md:gap-4">
-            <div className="flex w-10/12 md:w-2/5 lg:w-1/3 h-[450px] mx-auto">
+            <div className="flex w-10/12 md:w-2/5 lg:w-1/3 mx-auto">
                 <Image
-                    className="lg:hidden rounded-2xl"
+                    className="lg:hidden max-md:h-[450px] rounded-2xl"
                     src={Malinche}
                     alt="Me"
                     unoptimized
