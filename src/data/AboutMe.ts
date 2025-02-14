@@ -1,6 +1,0 @@
-export const description: string[] = [
-    "I’m a determined person who is constantly looking to acquire knowledge, improve my skills and learn new technologies to become a high-value professional in the software development industry.",
-    "I use Linux as my primary operating system and love everything related to it, from the programming languages used to develop and use it (C/C++ and Bash) to its capabilities, configurations and level of personalization on every single aspect of the system at any level.",
-    "Moving to new technologies is a great opportunity for me to show others and myself my ability to quickly learn and implement the gained knowledge to a project on the run while achieving its objectives.",
-    "I’m an extroverted person that enjoys socializing, meeting new people and communicating with my partners and friends to achieve our objectives and have a good time. Also, I enjoy exercising, going out to hang out with my friends or traveling to the mountains for a hike, making me a very proactive and adventurous person.",
-];
