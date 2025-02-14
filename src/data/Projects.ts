@@ -105,6 +105,14 @@ export const projects: Project[] = [
         type: "Multiplatform Application",
         category: ['JavaScript',],
     },
+    {
+        title: "Old Portfolio",
+        description: "Previous personal portfolio developed using Vue.js.",
+        technologies: ["JavaScript", "Vue.js", "Tailwind"],
+        category: ['JavaScript',],
+        type: "Front End",
+        link: "https://github.com/EmilioRivera0/Portfolio",
+    },
     // Python
     {
         title: "Engineering Faculty Repository API",
