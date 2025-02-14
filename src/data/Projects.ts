@@ -7,7 +7,7 @@ export type Project = {
     link?: string;
 };
 
-export const categories: string[] = ["All", "C/C++", "Python", "JavaScript", "C#" ];
+export const categories: string[] = ["All", "C/C++", "Python", "JavaScript", "Bash", "C#" ];
 
 export const projects: Project[] = [
     //C/C++
@@ -18,6 +18,14 @@ export const projects: Project[] = [
         category: ['C/C++',],
         type: "Linux Application",
         link: "https://github.com/EmilioRivera0/KharonSafeDirectory",
+    },
+    {
+        title: "Memory Tool",
+        description: "This project is a hobby that I started in my free time to learn more about system calls, processes in Linux and how their memory is managed and how an external process can access and manipulate the memory of another process. Although this project is unfinished and there’s a lot of work left for it, I love working on this type of programs.",
+        technologies: ["C/C++", "Bash", "Linux API", "System Calls", "Unix C Standard Library", "proc/ Directory"],
+        category: ['C/C++',],
+        type: "Linux Application",
+        link: "https://github.com/EmilioRivera0/MemoryTool",
     },
     {
         title: "IPC on Linux using Shared Memory & Signals",
@@ -78,17 +86,17 @@ export const projects: Project[] = [
     },
     {
         title: "Web Pages",
-        description: "",
+        description: "Worked on the designing, development and deployment of multiple static web pages for various clients giving their companies presence and visibility on the internet as well as upgrading them to the new digital market.",
         technologies: ["JavaScript", "TypeScript", "Astro", "Tailwind"],
         category: ['JavaScript',],
         type: "Front End",
     },
     {
         title: "Web Application",
-        description: "",
-        technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Bash", "JavaScript", "TypeScript", "React", "Tailwind"],
+        description: "Worked on the designing, development and deployment of Database, REST API and a Web Page providing a web platform  for a private company to use and automate their internal processes.",
+        technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Docker", "Bash", "JavaScript", "TypeScript", "React", "Tailwind", "AWS"],
         category: ['JavaScript', 'Python',],
-        type: "Front End",
+        type: "Fullstack",
     },
     {
         title: "Mobile App",
@@ -100,7 +108,7 @@ export const projects: Project[] = [
     // Python
     {
         title: "Engineering Faculty Repository API",
-        description: "I'm managing, designing and developing an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
+        description: "Managed, designed and developed  an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
         technologies: ["Python", "Django", "Django REST Framework", "Postman", "SQLite"],
         type: "Back End (REST API)",
         category: ['Python',],
@@ -153,10 +161,19 @@ export const projects: Project[] = [
         type: "Script",
         link: "https://github.com/EmilioRivera0/hour_tracker",
     },
+    //Bash
+    {
+        title: "Bash Scripts",
+        description: "Repository containing Bash/Shell scripts that I’ve developed for various projects and use cases, and decided to start archiving them for public access and to reuse them in the future if necessary.",
+        technologies: ["Bash", "GNU Coreutils", "Third Party Tools"],
+        category: ['Bash',],
+        type: "Automation Scripts",
+        link: "https://github.com/EmilioRivera0/bash-scripts",
+    },
     //C#
     {
         title: "Appointment Management System",
-        description: "Designing and developing an appointment management system for a nutrition clinic using .NET MAUI.",
+        description: "Designed and developed an appointment management system for a nutrition clinic using .NET MAUI.",
         technologies: ["C#", ".NET", "MAUI", "XAML",],
         category: ['C#',],
         type: "Multiplatform Application",
