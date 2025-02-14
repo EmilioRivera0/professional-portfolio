@@ -8,6 +8,15 @@ DIST_DIR='dist/'
 # alias for the remote git repo
 REMOTE='origin'
 
+# create dist directory if it is not present
+if [[ -d $DIST_DIR ]]; then
+  echo "dist/ directory found"
+else
+  echo "dist/ directory not found"
+  echo "Creating dist/ directory"
+  mkdir $DIST_DIR
+fi
+
 # build static export files
 npm run build
 
