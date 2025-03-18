@@ -52,6 +52,14 @@ export const projects: Project[] = [
         link: "https://github.com/EmilioRivera0/Convex_Hull",
     },
     {
+        title: "ESP32 Room Status Telegram Bot",
+        description: "C source code for programming an ESP32 board to read the temperature and humidity using the DHT11 sensor whenever a ‘/status’ command is sent to a Telegram Bot linked to the ESP32.",
+        technologies: ["C", "ESP-IDF", "DHT11", "Telegram Bot API", "C Standard Library"],
+        category: ['C/C++',],
+        type: "Microcontroller Application",
+        link: "https://github.com/EmilioRivera0/esp32-telegram-temperature-bot",
+    },
+    {
         title: "Atmega328P Car",
         description: "C source code for a bluetooth remotely controlled car using an Atmega328P microcontroller.",
         technologies: ["C", "Atmega328P"],
