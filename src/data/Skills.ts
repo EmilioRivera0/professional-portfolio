@@ -4,6 +4,7 @@ import Django from "@public/Django.svg";
 import Sqlalchemy from "@public/Sqlalchemy.svg";
 import Postgresql from "@public/Postgresql.svg";
 import Dotnet from "@public/Dotnet.svg";
+import Chatgpt from "@public/chatgpt.svg";
 
 export type Skill = {
     title: string;
@@ -28,6 +29,62 @@ export const skills: Skill[] = [
             {
                 icon: 'mdi:account-tie-voice',
                 name: 'Spanish'
+            },
+        ],
+    },
+    {
+        title: 'C#',
+        icon: 'devicon:csharp',
+        content: [
+            {
+                img: Dotnet,
+                name: 'NET Core',
+            },
+            {
+                img: Dotnet,
+                name: 'ASP.NET',
+            },
+            {
+                img: Dotnet,
+                name: 'Entity Framework',
+            },
+            {
+                img: Dotnet,
+                name: 'ADO.NET',
+            },
+            {
+                img: Dotnet,
+                name: 'NET MAUI',
+            },
+        ],
+    },
+    {
+        title: 'Python',
+        icon: 'devicon:python',
+        content: [
+            {
+                icon: 'devicon:flask',
+                name: 'Flask',
+            },
+            {
+                img: Django,
+                name: 'Django',
+            },
+            {
+                img: Sqlalchemy,
+                name: 'SQLAlchemy',
+            },
+            {
+                icon: 'devicon:tensorflow',
+                name: 'Tensorflow',
+            },
+            {
+                icon: 'devicon:scikitlearn',
+                name: 'Scikitlearn',
+            },
+            {
+                icon: 'devicon:pandas',
+                name: 'Pandas',
             },
         ],
     },
@@ -62,28 +119,6 @@ export const skills: Skill[] = [
             {
                 icon: 'devicon:typescript',
                 name: 'Typescript',
-            },
-        ],
-    },
-    {
-        title: 'Back End',
-        icon: 'mdi:server-outline',
-        content: [
-            {
-                icon: 'devicon:python',
-                name: 'Python',
-            },
-            {
-                icon: 'devicon:flask',
-                name: 'Flask',
-            },
-            {
-                img: Django,
-                name: 'Django',
-            },
-            {
-                img: Sqlalchemy,
-                name: 'SQLAlchemy',
             },
         ],
     },
@@ -154,20 +189,6 @@ export const skills: Skill[] = [
         ],
     },
     {
-        title: 'C#',
-        icon: 'devicon:csharp',
-        content: [
-            {
-                img: Dotnet,
-                name: 'NET',
-            },
-            {
-                img: Dotnet,
-                name: 'NET MAUI',
-            },
-        ],
-    },
-    {
         title: 'Technologies',
         icon: 'mdi:tools',
         content: [
@@ -180,8 +201,20 @@ export const skills: Skill[] = [
                 name: 'Postman',
             },
             {
+                icon: 'devicon:swagger',
+                name: 'Swagger',
+            },
+            {
                 icon: 'devicon:git',
                 name: 'Git',
+            },
+            {
+                icon: 'devicon:visualstudio',
+                name: 'Visual Studio',
+            },
+            {
+                img: Chatgpt,
+                name: 'OpenAI API',
             },
             {
                 icon: 'devicon:figma',
