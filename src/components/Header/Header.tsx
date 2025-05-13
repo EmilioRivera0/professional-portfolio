@@ -41,7 +41,7 @@ export function Header() {
                         </Link>))}
                 </div>
                 <div className="flex w-5/12 lg:w-4/12 my-auto justify-end">
-                    <Link className="mr-12 lg:mr-12 px-8 py-2 rounded-3xl bg-primary/80 text-white" href='/CV.pdf'>CV</Link>
+                    <Link className="mr-12 lg:mr-12 px-8 py-2 rounded-3xl bg-primary/80 text-white" href='/Emilio Rivera - SW Developer.pdf'>Resume</Link>
                 </div>
             </section>
             {/* Mobile Devices */}

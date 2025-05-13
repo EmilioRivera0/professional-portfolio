@@ -7,9 +7,119 @@ export type Project = {
     link?: string;
 };
 
-export const categories: string[] = ["All", "C/C++", "Python", "JavaScript", "Bash", "C#" ];
+export const categories: string[] = ["All", "Python", "C#", "JavaScript", "C/C++", "Bash", ];
 
 export const projects: Project[] = [
+    //C#
+    {
+        title: "Videogame API",
+        description: "Developed a Videogame API in my free time to demonstrate my knowledge with ASP.NET",
+        technologies: ["C#", ".NET Core", "ASP.NET", "Entity Framework", "ADO.NET", "ASP.NET Core Identity", "Swagger", "Controller Based"],
+        category: ['C#',],
+        type: "Back End (REST API)",
+        link: "https://github.com/EmilioRivera0/videogame-api",
+    },
+    {
+        title: "Appointment Management System",
+        description: "Designed and developed an appointment management system for a nutrition clinic using .NET MAUI.",
+        technologies: ["C#", ".NET Core", "MAUI", "XAML",],
+        category: ['C#',],
+        type: "Multiplatform Application",
+    },
+    // Python
+    {
+        title: "Engineering Faculty Repository API",
+        description: "Managed, designed and developed  an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
+        technologies: ["Python", "Django", "Django REST Framework", "Postman", "SQLite"],
+        type: "Back End (REST API)",
+        category: ['Python',],
+    },
+    {
+        title: "Videogame API",
+        description: "Python developed API that has the CRUD functions and a search engine to interact with a PostgreSQL database containing information about videogames.",
+        technologies: ["Python", "Flask", "PostgreSQL"],
+        category: ['Python',],
+        type: "Back End (REST API)",
+        link: "https://github.com/EmilioRivera0/videogame_api",
+    },
+    {
+        title: "Ecommerce",
+        description: "This repository holds a basic Ecommerce website for selling any type of product.",
+        technologies: ["Python", "Django", "SQLite", "MDB Bootstrap"],
+        category: ['Python',],
+        type: "Full Stack",
+        link: "https://github.com/EmilioRivera0/ecommerce_backend",
+    },
+    {
+        title: "Sobel Filter",
+        description: "Python program capable of detecting the vertical and horizontal edges of an image by applying the Sobel filters.",
+        technologies: ["Python", "OpenCV", "Matplotlib", "Numpy"],
+        category: ['Python',],
+        type: "Script",
+        link: "https://github.com/EmilioRivera0/Sobel_Filter",
+    },
+    {
+        title: "Basic Task API",
+        description: "API to manage a to do tasks list.",
+        technologies: ["Python", "Flask"],
+        category: ['Python',],
+        type: "Back End (REST API)",
+        link: "https://github.com/EmilioRivera0/basic_task_api",
+    },
+    {
+        title: "Basic Task API Client",
+        description: "Web Client to interact with the task management API.",
+        technologies: ["Python", "Flask"],
+        category: ['Python',],
+        type: "Back End (REST API)",
+        link: "https://github.com/EmilioRivera0/basic_task_api_client",
+    },
+    {
+        title: "Hour Tracker",
+        description: "Python developed software that automates and manages the hours covered by students in their social service.",
+        technologies: ["Python", "SQL", "MySQL"],
+        category: ['Python',],
+        type: "Script",
+        link: "https://github.com/EmilioRivera0/hour_tracker",
+    },
+    //JavaScript
+    {
+        title: "Portfolio",
+        description: "Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities. This is my first project using Next.js.",
+        technologies: ["JavaScript", "TypeScript", "Next.js", "Tailwind", "Bash"],
+        category: ['JavaScript',],
+        type: "Front End",
+        link: "https://github.com/EmilioRivera0/professional-portfolio",
+    },
+    {
+        title: "Web Pages",
+        description: "Worked on the designing, development and deployment of multiple static web pages for various clients giving their companies presence and visibility on the internet as well as upgrading them to the new digital market.",
+        technologies: ["JavaScript", "TypeScript", "Astro", "Tailwind"],
+        category: ['JavaScript',],
+        type: "Front End",
+    },
+    {
+        title: "Web Application",
+        description: "Worked on the designing, development and deployment of Database, REST API and a Web Page providing a web platform  for a private company to use and automate their internal processes.",
+        technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Docker", "Bash", "JavaScript", "TypeScript", "React", "Tailwind", "AWS"],
+        category: ['JavaScript', 'Python',],
+        type: "Fullstack",
+    },
+    {
+        title: "Mobile App",
+        description: "Collaborating on the designing and development of a mobile application for FISAIR Puebla.",
+        technologies: ["JavaScript", "React", "Ionic", "Tailwind"],
+        type: "Multiplatform Application",
+        category: ['JavaScript',],
+    },
+    {
+        title: "Old Portfolio",
+        description: "Previous personal portfolio developed using Vue.js.",
+        technologies: ["JavaScript", "Vue.js", "Tailwind"],
+        category: ['JavaScript',],
+        type: "Front End",
+        link: "https://github.com/EmilioRivera0/Portfolio",
+    },
     //C/C++
     {
         title: "Kharon Safe Directory",
@@ -83,100 +193,6 @@ export const projects: Project[] = [
         type: "Executable",
         link: "https://github.com/EmilioRivera0/Platypus",
     },
-    //JavaScript
-    {
-        title: "Portfolio",
-        description: "Personal portfolio developed using self taught technologies to expand my software development knowledge and capabilities. This is my first project using Next.js.",
-        technologies: ["JavaScript", "TypeScript", "Next.js", "Tailwind", "Bash"],
-        category: ['JavaScript',],
-        type: "Front End",
-        link: "https://github.com/EmilioRivera0/professional-portfolio",
-    },
-    {
-        title: "Web Pages",
-        description: "Worked on the designing, development and deployment of multiple static web pages for various clients giving their companies presence and visibility on the internet as well as upgrading them to the new digital market.",
-        technologies: ["JavaScript", "TypeScript", "Astro", "Tailwind"],
-        category: ['JavaScript',],
-        type: "Front End",
-    },
-    {
-        title: "Web Application",
-        description: "Worked on the designing, development and deployment of Database, REST API and a Web Page providing a web platform  for a private company to use and automate their internal processes.",
-        technologies: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Docker", "Bash", "JavaScript", "TypeScript", "React", "Tailwind", "AWS"],
-        category: ['JavaScript', 'Python',],
-        type: "Fullstack",
-    },
-    {
-        title: "Mobile App",
-        description: "Collaborating on the designing and development of a mobile application for FISAIR Puebla.",
-        technologies: ["JavaScript", "React", "Ionic", "Tailwind"],
-        type: "Multiplatform Application",
-        category: ['JavaScript',],
-    },
-    {
-        title: "Old Portfolio",
-        description: "Previous personal portfolio developed using Vue.js.",
-        technologies: ["JavaScript", "Vue.js", "Tailwind"],
-        category: ['JavaScript',],
-        type: "Front End",
-        link: "https://github.com/EmilioRivera0/Portfolio",
-    },
-    // Python
-    {
-        title: "Engineering Faculty Repository API",
-        description: "Managed, designed and developed  an API as the backend of the upcoming engineering repository for the IBERO Puebla community using Python and Django REST Framework.",
-        technologies: ["Python", "Django", "Django REST Framework", "Postman", "SQLite"],
-        type: "Back End (REST API)",
-        category: ['Python',],
-    },
-    {
-        title: "Videogame API",
-        description: "Python developed API that has the CRUD functions and a search engine to interact with a PostgreSQL database containing information about videogames.",
-        technologies: ["Python", "Flask", "PostgreSQL"],
-        category: ['Python',],
-        type: "Back End (REST API)",
-        link: "https://github.com/EmilioRivera0/videogame_api",
-    },
-    {
-        title: "Ecommerce",
-        description: "This repository holds a basic Ecommerce website for selling any type of product.",
-        technologies: ["Python", "Django", "SQLite", "MDB Bootstrap"],
-        category: ['Python',],
-        type: "Full Stack",
-        link: "https://github.com/EmilioRivera0/ecommerce_backend",
-    },
-    {
-        title: "Sobel Filter",
-        description: "Python program capable of detecting the vertical and horizontal edges of an image by applying the Sobel filters.",
-        technologies: ["Python", "OpenCV", "Matplotlib", "Numpy"],
-        category: ['Python',],
-        type: "Script",
-        link: "https://github.com/EmilioRivera0/Sobel_Filter",
-    },
-    {
-        title: "Basic Task API",
-        description: "API to manage a to do tasks list.",
-        technologies: ["Python", "Flask"],
-        category: ['Python',],
-        type: "Back End (REST API)",
-        link: "https://github.com/EmilioRivera0/basic_task_api",
-    },
-    {
-        title: "Basic Task API Client",
-        description: "Web Client to interact with the task management API.",
-        technologies: ["Python", "Flask"],
-        category: ['Python',],
-        type: "Back End (REST API)",
-        link: "https://github.com/EmilioRivera0/basic_task_api_client",
-    },
-    {
-        title: "Hour Tracker",
-        description: "Python developed software that automates and manages the hours covered by students in their social service.",
-        technologies: ["Python", "SQL", "MySQL"],
-        category: ['Python',],
-        type: "Script",
-        link: "https://github.com/EmilioRivera0/hour_tracker",
-    },
     //Bash
     {
         title: "Bash Scripts",
@@ -185,13 +201,5 @@ export const projects: Project[] = [
         category: ['Bash',],
         type: "Automation Scripts",
         link: "https://github.com/EmilioRivera0/bash-scripts",
-    },
-    //C#
-    {
-        title: "Appointment Management System",
-        description: "Designed and developed an appointment management system for a nutrition clinic using .NET MAUI.",
-        technologies: ["C#", ".NET", "MAUI", "XAML",],
-        category: ['C#',],
-        type: "Multiplatform Application",
     },
 ];
