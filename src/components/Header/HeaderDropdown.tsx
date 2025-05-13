@@ -65,7 +65,7 @@ export function HeaderDropdown({content, className, path}: Props) {
                 ))}
                 <Link
                     className="border-b-2 border-black"
-                    href="/CV.pdf"
+                    href="/Emilio Rivera - SW Developer.pdf"
                 >
                     CV
                 </Link>
