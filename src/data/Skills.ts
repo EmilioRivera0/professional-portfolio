@@ -109,6 +109,10 @@ export const skills: Skill[] = [
                 name: 'Vue',
             },
             {
+                icon: 'devicon:blazor',
+                name: 'Blazor/Razor',
+            },
+            {
                 icon: 'devicon:tailwindcss',
                 name: 'Tailwind',
             },
